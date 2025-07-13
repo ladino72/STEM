@@ -1,0 +1,60 @@
+site_name: Actividades de Física
+theme:
+  name: material
+
+nav:
+  - Introducción: index.md
+  - FIME:
+      - Programación: FIME/index.md
+      - Teoría de errores: FIME/actividad-1.md
+      - Slinky: FIME/actividad-2.md
+      - Medición de g: FIME/actividad-3.md
+      - Cinemática en el plano inclinado: FIME/actividad-4.md
+      - Fuerza de fricción: FIME/actividad-5.md
+      - Conservación de la energía: FIME/actividad-6.md
+      - Dinámica rotacional: FIME/actividad-7.md
+      - Principio de Arquímedes: FIME/actividad-8.md
+  - FIS1:
+      - Programación: FIS1/index.md
+      - Teoría de errores: FIS1/actividad-1.md
+      - Slinky: FIS1/actividad-2.md
+      - Medición de g: FIS1/actividad-3.md
+      - Cinemática en el plano inclinado: FIS1/actividad-4.md
+      - Movimiento armónico simple: FIS1/actividad-5.md
+      - Fuerza de fricción: FIS1/actividad-6.md
+      - Conservación de la energía: FIS1/actividad-7.md
+      - Ondas en una cuerda: FIS1/actividad-8.md
+
+  - FIEM:
+      - Programación: FIEM/index.md
+      - Teoría de errores: FIEM/actividad-1.md
+      - Fenómenos Electroestáticos: FIEM/actividad-2.md
+      - Ley de Coulomb: FIEM/actividad-3.md
+      - Generador de Van de Graaff: FIEM/actividad-4.md
+      - Carga y Descarga Progresiva de un Condensador: FIEM/actividad-5.md
+      - Coeficiente de temperatura de la resistencia del Cu: FIEM/actividad-6.md
+      - Ley de Ohm y leyes de Kirchhoff: FIEM/actividad-7.md
+      - Campo magnético terrestre: FIEM/actividad-8.md
+      - Permeabilidad magnética del aire: FIEM/actividad-9.md
+
+  - FIS2:
+      - Programación: FIS2/index.md
+      - Teoría de errores: FIS2/actividad-1.md
+      - Fenómenos Electroestáticos: FIS2/actividad-2.md
+      - Ley de Coulomb: FIS2/actividad-3.md
+      - Generador de Van de Graaff: FIS2/actividad-4.md
+      - Carga y Descarga Progresiva de un Condensador: FIS2/actividad-5.md
+      - Ley de Ohm y leyes de Kirchhoff: FIS2/actividad-6.md
+      - Campo magnético terrestre: FIS2/actividad-7.md
+      - Ley de Lenz: FIS2/actividad-8.md
+      - Ondas estacionarias: FIS2/actividad-9.md
+      - Midiendo Dimensiones Microscópicas con Láser: FIS2/actividad-10.md
+  - FCOP:
+      - Programación: FCOP/index.md
+      - Péndulo Simple y Sistema masa-resorte: FCOP/actividad-1.md
+      - Péndulo Compuesto: FCOP/actividad-2.md
+      - Oscilaciones Forzadas: FCOP/actividad-3.md
+      - Ondas estacionarias: FCOP/actividad-4.md
+      - Midiendo concentraciones de azúcar: FCOP/actividad-5.md
+      - Interferencia y difracción: FCOP/actividad-6.md
+      - Midiendo Dimensiones Microscópicas con Láser: FCOP/actividad-7.md

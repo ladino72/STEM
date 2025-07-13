@@ -1,0 +1,16 @@
+# Evitar subir la carpeta de salida de MkDocs
+site/
+
+# Entorno virtual de Python
+.venv/
+env/
+venv/
+
+# Archivos de configuración del sistema o del editor
+*.pyc
+__pycache__/
+.DS_Store
+*.swp
+
+# Archivos ocultos o locales de VS Code
+.vscode/
