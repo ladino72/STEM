@@ -1,6 +1,6 @@
 ## 🎯 Propósito del sitio
 
-Este sitio reúne las **actividades de laboratorio de física** diseñadas e implementadas bajo la filosofía **STEM** (Ciencia, Tecnología, Ingeniería y Matemáticas). Su propósito principal es ofrecer al estudiante un entorno más **flexible, activo y significativo** de aprendizaje experimental, en el que no solo adquiera conocimientos, sino que los construya mediante la **exploración, el diseño y la argumentación fundamentada**.
+Este sitio reúne las **actividades de laboratorio de física** diseñadas e implementadas bajo la filosofía **STEM** (Ciencia, Tecnología, Ingeniería y Matemáticas). Su propósito principal es ofrecer al estudiante un entorno de aprendizaje experimental más **flexible, activo y significativo**, en el que no solo adquiera conocimientos, sino que los construya mediante la **exploración, el diseño y la argumentación fundamentada**.
 
 ## 👨‍🎓 Rol del estudiante
 
@@ -8,14 +8,13 @@ En este enfoque, el estudiante **deja de ser un ejecutor pasivo de instrucciones
 
 - Diseñe sus propios procedimientos experimentales,
 - Tome decisiones sobre la metodología,
-- Analice los resultados críticamente,# Introducción
+- Analice los resultados críticamente.
 
-Bienvenido al sitio de actividades de laboratorio en física con enfoque STEM.
-Esta transformación requiere una actitud activa, comprometida y abierta al aprendizaje autónomo, siempre acompañada del docente.
+Esta transformación requiere una actitud **activa, comprometida y abierta al aprendizaje autónomo**, siempre acompañada por el docente.
 
 ## 👨‍🏫 Rol del profesor
 
-El docente actúa como **guía, facilitador y mediador del aprendizaje**. Su papel no es decirle al estudiante qué hacer en cada paso, sino:
+El docente actúa como **guía, facilitador y mediador del aprendizaje**. Su papel no consiste en decirle al estudiante qué hacer en cada paso, sino en:
 
 - Proponer problemas o fenómenos significativos,
 - Acompañar el proceso de investigación y diseño experimental,
@@ -49,14 +48,14 @@ Cada grupo debe entregar un informe con:
 
 ### 🗣️ Exposición oral (competencias blandas)
 
-En la segunda sesión (cuando aplica), **todos los grupos deben realizar una exposición de aproximadamente 10 minutos**, en la que **todos los integrantes participan**. El objetivo de esta actividad es:
+En la segunda sesión (cuando aplique), **todos los grupos deben realizar una exposición de aproximadamente 10 minutos**, en la que **todos los integrantes participen**. El objetivo de esta actividad es:
 
 - Fortalecer habilidades de **comunicación oral**,
 - Desarrollar **competencias blandas** como el trabajo en equipo, la argumentación, la claridad expositiva y el pensamiento reflexivo,
 - Responder preguntas del profesor y otros grupos,
 - Justificar decisiones y discutir los resultados de manera crítica.
 
-Esta dimensión comunicativa es clave en la formación de ingenieros y científicos, y es una de las principales razones por las que **las guías fueron rediseñadas** bajo la metodología STEM.
+Esta dimensión comunicativa es clave en la formación de ingenieros y científicos, y representa una de las principales razones por las que **las guías fueron rediseñadas** bajo la metodología STEM.
 
 ## 🌱 Una nueva forma de aprender ciencia
 
