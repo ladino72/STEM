@@ -14,7 +14,7 @@
       <td>1</td>
       <td>Agosto 11 - Agosto 16</td>
       <td>Actividad 1: Teoría de errores <span style="color:red; font-weight:bold;">(I)</span></td>
-      <td><a href="Teoria_de_errores.pdf">📎 Teoría de errores</a></td>
+      <td><a href="ErrorTheory.pdf">📎 Teoría de errores</a></td>
     </tr>
     <tr>
       <td>2</td>
@@ -93,13 +93,13 @@
       <td>14</td>
       <td>Noviembre 10 - Noviembre 15</td>
       <td>Actividad 8: Campo magnético terrestre</td>
-      <td><a href="Campo_Magnetico.pdf">📎 Campo Magnético</a></td>
+      <td><a href="EarthMagneticField.pdf">📎 Campo Magnético</a></td>
     </tr>
     <tr>
       <td>15</td>
       <td>Noviembre 17 - Noviembre 22</td>
       <td>Actividad 8: Campo magnético terrestre <span style="color:red; font-weight:bold;">(S+I)</span></td>
-      <td><a href="Campo_Magnetico.pdf">📎 Campo Magnético</a></td>
+      <td><a href="EarthMagneticField.pdf">📎 Campo Magnético</a></td>
     </tr>
     <tr>
       <td>16</td>

@@ -14,7 +14,7 @@
       <td>1</td>
       <td>Agosto 11 - Agosto 16</td>
       <td>Actividad 1: Teoría de errores <span style="color:red; font-weight:bold;">(I)</span></td>
-      <td><a href="Teoria_de_errores.pdf">📎 Teoría de errores</a></td>
+      <td><a href="ErrorTheory.pdf">📎 Teoría de errores</a></td>
     </tr>
     <tr>
       <td>2</td>
@@ -69,13 +69,13 @@
       <td>10</td>
       <td>Octubre 13 - Octubre 18</td>
       <td>Actividad 5: Movimiento armónico simple</td>
-      <td><a href="PenduloSimple.pdf">📎 Movimiento armónico simple</a></td>
+      <td><a href="IntroMAS.pdf">📎 Movimiento armónico simple</a></td>
     </tr>
     <tr>
       <td>11</td>
       <td>Octubre 20 - Octubre 25</td>
       <td>Actividad 5: Movimiento armónico simple <span style="color:red; font-weight:bold;">(S+I)</span></td>
-      <td><a href="PenduloSimple.pdf">📎 Movimiento armónico simple</a></td>
+      <td><a href="IntroMAS.pdf">📎 Movimiento armónico simple</a></td>
     </tr>
     <tr>
       <td>12</td>

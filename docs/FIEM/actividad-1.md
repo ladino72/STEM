@@ -1,15 +1,15 @@
-# Actividad 2: Oscilaciones
+# Actividad 1: Teoría de errores
 
 ---
 
-## ✏️ Desafío STEM: ¿Puede un objeto levitar usando solo electricidad invisible?
+## ✏️ Desafío STEM: : ¿Cómo reportar correctamente una medición científica?
 
 ---
 
 ## 📄 Documento de trabajo
 
-👉[📎 Descargar PDF: Electrostatic Phenomena](../FIEM/Electrostatic_Phenomena.pdf)
+👉[📎 Descargar PDF: Teoría de errores](../FIEM/ErrorTheory.pdf) &nbsp;&nbsp;&nbsp;&nbsp; 👉[📎 Descargar PDF: Lectura](../FIEM/StudentReading.pdf)
 
 ---
 
-> **Nota:** Esta actividad corresponde a la seguna y terceraa semana del curso. Revisa el cronograma completo para asegurarte de cumplir con fechas de entrega y preparación.
+> **Nota:** Revisa el cronograma completo para asegurarte de cumplir con fechas de entrega y preparación.

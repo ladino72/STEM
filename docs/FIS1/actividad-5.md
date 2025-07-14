@@ -8,7 +8,7 @@
 
 ## 📄 Documento de trabajo
 
-👉[📎 Descargar PDF: Oscilaciones armónicas](../FIME/PenduloSimple.pdf)
+👉[📎 Descargar PDF: Oscilaciones armónicas](../FIS1/IntroMAS.pdf)
 
 ---
 

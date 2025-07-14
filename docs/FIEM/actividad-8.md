@@ -8,8 +8,8 @@
 
 ## 📄 Documento de trabajo
 
-👉 [📎 Descargar PDF: Campo magnético](../FIEM/MagneticField.pdf)
+👉 [📎 Descargar PDF: Campo magnético](../FIEM/EarthMagneticField.pdf)
 
 ---
 
-> **Nota:** Esta actividad corresponde a la decimacuarta y decimoquinta semana del curso. Revisa el cronograma completo para asegurarte de cumplir con las fechas de entrega y preparación.
+> **Nota:** Revisa el cronograma completo para asegurarte de cumplir con las fechas de entrega y preparación.

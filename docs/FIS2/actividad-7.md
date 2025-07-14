@@ -8,7 +8,7 @@
 
 ## 📄 Documento de trabajo
 
-👉 [📎 Descargar PDF: Campo magnético](../FIEM/MagneticField.pdf)
+👉 [📎 Descargar PDF: Campo magnético](../FIEM/EarthMagneticField.pdf)
 
 ---
 
