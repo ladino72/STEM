@@ -2,7 +2,7 @@
 
 ---
 
-## ✏️ Desafío STEM: ¿Cómo reportar correctamente una medición científica?
+## ✏️ Desafío STEM: Familiarización con instrumentos de laboratorio en electromagnetismo
 
 ---
 
