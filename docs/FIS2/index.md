@@ -13,8 +13,8 @@
     <tr>
       <td>1</td>
       <td>Agosto 11 - Agosto 16</td>
-      <td>Actividad 1: Teoría de errores <span style="color:red; font-weight:bold;">(I)</span></td>
-      <td><a href="ErrorTheory.pdf">📎 Teoría de errores</a></td>
+      <td>Actividad 1: Instrumentos de medición <span style="color:red; font-weight:bold;">(I)</span></td>
+      <td><a href="MeasuringInstruments.pdf">📎 Instrumentos de medición</a></td>
     </tr>
     <tr>
       <td>2</td>

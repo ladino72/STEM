@@ -1,14 +1,18 @@
-# Actividad 1: Teoría de errores
+# Actividad 1: Instrumentos de medición
 
 ---
 
-## ✏️ Desafío STEM: : ¿Cómo reportar correctamente una medición científica?
+## ✏️ Desafío STEM: ¿Cómo reportar correctamente una medición científica?
 
 ---
 
 ## 📄 Documento de trabajo
 
-👉[📎 Descargar PDF: Teoría de errores](../FIS2/ErrorTheory.pdf) &nbsp;&nbsp;&nbsp;&nbsp; 👉[📎 Descargar PDF: Lectura](../FIS2/StudentReading.pdf)
+👉[📎 Descargar PDF: Instrumentos de medición](../FIS2/MeasuringInstruments.pdf)
+
+---
+
+> **⚡ Precaución eléctrica:** Asegúrate de seguir todas las medidas de seguridad al manejar instrumentos de medición de voltaje y corriente para evitar riesgos de electrocución.
 
 ---
 

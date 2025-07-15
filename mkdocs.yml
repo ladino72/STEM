@@ -27,7 +27,7 @@ nav:
 
   - FIEM:
       - Programación: FIEM/index.md
-      - Teoría de errores: FIEM/actividad-1.md
+      - Instrumentos de medición: FIEM/actividad-1.md
       - Fenómenos Electroestáticos: FIEM/actividad-2.md
       - Ley de Coulomb: FIEM/actividad-3.md
       - Generador de Van de Graaff: FIEM/actividad-4.md
@@ -39,7 +39,7 @@ nav:
 
   - FIS2:
       - Programación: FIS2/index.md
-      - Teoría de errores: FIS2/actividad-1.md
+      - Instrumentos de medición: FIS2/actividad-1.md
       - Fenómenos Electroestáticos: FIS2/actividad-2.md
       - Ley de Coulomb: FIS2/actividad-3.md
       - Generador de Van de Graaff: FIS2/actividad-4.md
