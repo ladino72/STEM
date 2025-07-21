@@ -2,7 +2,7 @@
 
 ---
 
-## ✏️ Desafío STEM: Determinación del campo magnético terrestre en su localidad
+## ✏️ Desafío: Determinar el campo magnético terrestre en su localidad
 
 ---
 

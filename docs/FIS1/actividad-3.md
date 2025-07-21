@@ -2,7 +2,7 @@
 
 ---
 
-## ✏️ Desafío STEM: Determinación de la Aceleración de la Gravedad Usando una Zebra y Fotopuerta
+## ✏️ Desafío: Determinar la Aceleración de la Gravedad Usando una Zebra y Fotopuerta
 
 ---
 

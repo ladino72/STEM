@@ -2,7 +2,7 @@
 
 ---
 
-## ✏️ Desafío STEM: Determinación del campo magnético terrestre en su localidad
+## ✏️ Desafío: ¿Puede encenderse un LED sin usar una batería?
 
 ---
 

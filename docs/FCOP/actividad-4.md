@@ -2,7 +2,7 @@
 
 ---
 
-## ✏️ Desafío STEM: Explorando las Ondas Estacionarias en Cuerdas y Tubos de Aire
+## ✏️ Desafío: Explorando las Ondas Estacionarias en Cuerdas y Tubos de Aire
 
 ---
 

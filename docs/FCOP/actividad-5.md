@@ -2,7 +2,7 @@
 
 ---
 
-## ✏️ Desafío STEM: ¿Puede un Láser Detectar Cuánta Azúcar Hay?
+## ✏️ Desafío: ¿Puede un Láser Detectar Cuánta Azúcar Hay?
 
 ---
 

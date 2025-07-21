@@ -2,7 +2,7 @@
 
 ---
 
-## ✏️ Desafío STEM: ¿Puede un objeto levitar usando solo electricidad invisible?
+## ✏️ Desafío: ¿Puede un objeto levitar usando solo electricidad invisible?
 
 ---
 

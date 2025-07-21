@@ -2,7 +2,7 @@
 
 ---
 
-## ✏️ Desafío STEM: Carga y descarga progresiva de un condensador grande usando uno más pequeño
+## ✏️ Desafío: ¿Puedde Cargarse o descargarse progresivamente de un condensador?
 
 ---
 

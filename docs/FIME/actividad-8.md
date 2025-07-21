@@ -2,7 +2,7 @@
 
 ---
 
-## ✏️ Desafío STEM: Determinación de g mediante Conservación de la Energía Mecánica
+## ✏️ Desafío: Determinar la densidad de un líquido usando el principio de Arquímedes
 
 ---
 

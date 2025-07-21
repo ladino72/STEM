@@ -2,7 +2,7 @@
 
 ---
 
-## ✏️ Desafío STEM: Explorando el Péndulo Físico Usando una Regla Perforada
+## ✏️ Desafío: Explorando el Péndulo Físico Usando una Regla Perforada
 
 ---
 

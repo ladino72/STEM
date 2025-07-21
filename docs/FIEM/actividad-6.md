@@ -2,7 +2,7 @@
 
 ---
 
-## ✏️ Desafío STEM: Determinación del Coeficiente de Temperatura de la Resistencia Eléctrica del Cobre
+## ✏️ Desafío: Determinar el Coeficiente de Temperatura de la Resistencia Eléctrica del Cobre
 
 ---
 

@@ -2,7 +2,7 @@
 
 ---
 
-## ✏️ Desafío STEM: Análisis de la cinemática en planos inclinados usando Tracker
+## ✏️ Desafío: Análisis de la cinemática en planos inclinados usando Tracker
 
 ---
 

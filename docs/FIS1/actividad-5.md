@@ -2,7 +2,7 @@
 
 ---
 
-## ✏️ Desafío STEM: Estudio de sistemas oscilantes
+## ✏️ Desafío: Estudio de sistemas oscilantes
 
 ---
 

@@ -2,7 +2,7 @@
 
 ---
 
-## ✏️ Desafío STEM: Explorando la Ley de Coulomb con Simulación Interactiva
+## ✏️ Desafío: Explorando la Ley de Coulomb con Simulación Interactiva
 
 ---
 

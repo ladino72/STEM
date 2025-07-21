@@ -2,7 +2,7 @@
 
 ---
 
-## ✏️ Desafío STEM: Determinación de la Permeabilidad Magnética del Aire
+## ✏️ Desafío: Determinar la Permeabilidad Magnética del Aire
 
 ---
 

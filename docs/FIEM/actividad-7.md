@@ -2,7 +2,7 @@
 
 ---
 
-## ✏️ Desafío STEM: Explorando la Ley de Ohm y las Leyes de Kirchhoff con Simulación PhE
+## ✏️ Desafío: Explorando la Ley de Ohm y las Leyes de Kirchhoff con Simulación PhE
 
 ---
 

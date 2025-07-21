@@ -2,7 +2,7 @@
 
 ---
 
-## ✏️ Desafío STEM: Determinación de g mediante Conservación de la Energía Mecánica
+## ✏️ Desafío: Determinar los parámteros que describen una onda
 
 ---
 

@@ -2,7 +2,7 @@
 
 ---
 
-## ✏️ Desafío STEM: ¿Puede recogerse la carga eléctrica en un recipiente?
+## ✏️ Desafío: ¿Puede recogerse la carga eléctrica en un recipiente?
 
 ---
 

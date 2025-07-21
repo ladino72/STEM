@@ -2,7 +2,7 @@
 
 ---
 
-## ✏️ Desafío STEM: Familiarización con instrumentos de laboratorio en electromagnetismo
+## ✏️ Desafío: Familiarizarse con instrumentos medición eléctrica
 
 ---
 

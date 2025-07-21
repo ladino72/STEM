@@ -2,7 +2,7 @@
 
 ---
 
-## ✏️ Desafío STEM: nterferencia y Difracción de Ondas
+## ✏️ Desafío: Interferencia y Difracción de Ondas
 
 ---
 

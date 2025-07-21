@@ -1,8 +1,8 @@
-# Actividad 9: Interferencia y Difracción
+# Actividad 10: Interferencia y Difracción
 
 ---
 
-## ✏️ Desafío STEM: Medición de Anchos Micrométricos Usando Difracción Láser
+## ✏️ Desafío: Medir Anchos Micrométricos Usando Difracción Láser
 
 ---
 

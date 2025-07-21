@@ -2,7 +2,7 @@
 
 ---
 
-## ✏️ Desafío STEM: Determinación de la Permeabilidad Magnética del Aire
+## ✏️ Desafío: Identificar los modos normales de osiclación de una cuerda vibrante
 
 ---
 

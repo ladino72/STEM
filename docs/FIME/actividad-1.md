@@ -2,7 +2,7 @@
 
 ---
 
-## ✏️ Desafío STEM: : ¿Cómo reportar correctamente una medición científica?
+## ✏️ Desafío: ¿Cómo reportar correctamente una medición científica?
 
 ---
 

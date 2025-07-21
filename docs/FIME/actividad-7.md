@@ -2,7 +2,7 @@
 
 ---
 
-## ✏️ Desafío STEM: Determinación de g mediante Conservación de la Energía Mecánica
+## ✏️ Desafío: Analizar el movimiento de una esfera a lo largo de un riel acanalado
 
 ---
 

@@ -2,7 +2,7 @@
 
 ---
 
-## ✏️ Desafío STEM: Distribución de Espiras en un Slinky Suspendido
+## ✏️ Desafío: Determinar la Distribución de Espiras en un Slinky Suspendido
 
 ---
 

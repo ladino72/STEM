@@ -2,7 +2,7 @@
 
 ---
 
-## ✏️ Desafío STEM: Medición de Anchos Micrométricos Usando Difracción Láser
+## ✏️ Desafío: Medir Anchos Micrométricos Usando Difracción Láser
 
 ---
 
