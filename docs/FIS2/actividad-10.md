@@ -8,7 +8,7 @@
 
 ## 📄 Documento de trabajo
 
-👉 [📎 Descargar guía en PDF](../FIEM/HairWidthDiameterHole.pdf)
+👉 [📎 Descargar PDF: Interferencia y difracción](../FIEM/HairWidthDiameterHole.pdf)
 
 ---
 

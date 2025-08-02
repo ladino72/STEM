@@ -8,7 +8,7 @@
 
 ## 📄 Documento de trabajo
 
-👉 [📎 Descargar guía en PDF](../FIEM/StandingWaves.pdf)
+👉 [📎 Descargar PDF: Ondas estacionarias](../FIEM/StandingWaves.pdf)
 
 ---
 

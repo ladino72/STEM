@@ -8,7 +8,7 @@
 
 ## 📄 Documento de trabajo
 
-👉 [📎 Descargar PDF: Campo magnético](../FIEM/Lenz_Law.pdf)
+👉 [📎 Descargar PDF: Leyes de Lenz y Faraday](../FIEM/Lenz_Law.pdf)
 
 ---
 

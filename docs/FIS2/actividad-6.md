@@ -8,7 +8,7 @@
 
 ## 📄 Documento de trabajo
 
-👉 [📎 Descargar guía en PDF](../FIEM/Ohm_Kirchhoff.pdf)
+👉 [📎 Descargar PDF: Leyes de Ohm y Kirchhoff](../FIEM/Ohm_Kirchhoff.pdf)
 
 ---
 

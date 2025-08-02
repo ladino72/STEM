@@ -8,7 +8,7 @@
 
 ## 📄 Documento de trabajo
 
-👉 [📎 Descargar guía en PDF](../FIEM/CargaDescargaCondensador.pdf)
+👉 [📎 Descargar PDF: Condensadores](../FIEM/CargaDescargaCondensador.pdf)
 
 ---
 

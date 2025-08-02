@@ -8,7 +8,7 @@
 
 ## 📄 Documento de trabajo
 
-👉 [📎 Descargar guía en PDF](../FIEM/Van%20de%20Graaff.pdf)
+👉 [📎 Descargar PDF: Generador de Van de Graaff](../FIEM/Van%20de%20Graaff.pdf)
 
 ---
 

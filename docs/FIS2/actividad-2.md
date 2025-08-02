@@ -8,7 +8,7 @@
 
 ## 📄 Documento de trabajo
 
-👉[📎 Descargar PDF: Electrostatic Phenomena](../FIEM/Electrostatic_Phenomena.pdf)
+👉[📎 Descargar PDF: Fenómenos electrostáticos](../FIEM/Electrostatic_Phenomena.pdf)
 
 ---
 
