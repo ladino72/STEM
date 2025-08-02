@@ -1,40 +1,59 @@
+# 🌐 Bienvenido al sitio de prácticas de laboratorio de Física
+
 ## 🎯 Propósito del sitio
 
-Este sitio reúne las **actividades de laboratorio de física** diseñadas e implementadas bajo la filosofía **STEM** (Ciencia, Tecnología, Ingeniería y Matemáticas). Su propósito principal es ofrecer al estudiante un entorno de aprendizaje experimental más **flexible, activo y significativo**, en el que no solo adquiera conocimientos, sino que los construya mediante la **exploración, el diseño y la argumentación fundamentada**.
+Este sitio reúne las **actividades de laboratorio de física** diseñadas e implementadas con base en la filosofía **STEM** (Ciencia, Tecnología, Ingeniería y Matemáticas). El objetivo es ofrecer al estudiante un entorno experimental más **activo, reflexivo y significativo**, donde los conceptos científicos se comprendan a partir de la **exploración, el análisis y la argumentación fundamentada**.
+
+Las guías buscan fomentar un aprendizaje que integre **habilidades científicas, comunicativas y de pensamiento crítico**, respetando al mismo tiempo las **condiciones reales del contexto educativo**.
 
 ## 👨‍🎓 Rol del estudiante
 
-En este enfoque, el estudiante **deja de ser un ejecutor pasivo de instrucciones** para convertirse en el **protagonista de su formación**. Se espera que:
+En el enfoque STEM, se espera que el estudiante **asuma un rol activo y propositivo** en su proceso de formación. Aunque cada guía presenta un montaje experimental ya definido —por razones logísticas y de seguridad—, **el estudiante tiene la responsabilidad de comprenderlo, analizarlo críticamente y tomar decisiones informadas durante la ejecución**.
 
-- Diseñe sus propios procedimientos experimentales,
-- Tome decisiones sobre la metodología,
-- Analice los resultados críticamente.
+Asimismo, se espera que:
 
-Esta transformación requiere una actitud **activa, comprometida y abierta al aprendizaje autónomo**, siempre acompañada por el docente.
+- Lea previamente la actividad y los conceptos involucrados,
+- Participe en la recolección y el análisis de datos,
+- Proponga interpretaciones razonadas de los resultados,
+- Argumente sus conclusiones en espacios individuales y colectivos.
+
+Este tipo de aprendizaje requiere una **actitud comprometida, autónoma y colaborativa**.
 
 ## 👨‍🏫 Rol del profesor
 
-El docente actúa como **guía, facilitador y mediador del aprendizaje**. Su papel no consiste en decirle al estudiante qué hacer en cada paso, sino en:
+El docente actúa como **facilitador y mediador del aprendizaje**. Más que entregar soluciones paso a paso, su función es **orientar, provocar preguntas y acompañar el proceso de construcción de conocimiento**.
 
-- Proponer problemas o fenómenos significativos,
-- Acompañar el proceso de investigación y diseño experimental,
-- Orientar la reflexión crítica,
-- Estimular el diálogo y la argumentación con base científica.
+- Propone fenómenos relevantes para investigar,
+- Acompaña la ejecución del experimento con sentido pedagógico,
+- Estimula la discusión, la reflexión y la conexión con conceptos fundamentales.
 
-El profesor sigue siendo una figura clave, pero su intervención se enfoca en **promover la autonomía y el pensamiento crítico**, no en entregar soluciones prefabricadas.
+Su intervención se enfoca en **promover la comprensión, la argumentación y la autonomía del estudiante**.
 
 ## 📘 Estructura de las guías
 
-Cada práctica o guía contiene:
+Cada guía contiene:
 
 - Una introducción conceptual,
 - Objetivos claros,
 - Materiales sugeridos,
-- Un reto o problema experimental,
-- Espacios para la recolección, análisis y discusión de resultados,
-- Indicaciones sobre la forma de entregar los productos.
+- Un reto o problema experimental a resolver,
+- Espacios para registrar y analizar los resultados,
+- Indicaciones para la entrega del informe y la exposición.
 
-Además, **se han incorporado dos formas complementarias de evaluación**:
+**El montaje experimental propuesto es común a todos los grupos**, lo cual permite aprovechar de forma eficiente los recursos del laboratorio, facilitar la comparación de resultados y enfocar el análisis en los aspectos esenciales del fenómeno estudiado.
+
+## 📊 Evaluación del curso
+
+A diferencia de los cursos tradicionales, **este curso de laboratorio no incluye exámenes escritos**. La evaluación se basa **exclusivamente en el desarrollo de actividades experimentales**, tanto en su ejecución como en su análisis y comunicación.
+
+### 🔍 Componentes de evaluación
+
+Cada actividad experimental se evalúa a partir de **dos componentes principales**:
+
+- El **informe escrito**, elaborado por el grupo.
+- La **exposición oral**, realizada en la segunda sesión (cuando aplique).
+
+Ambos elementos están descritos en detalle a continuación.
 
 ### 📝 Informe escrito
 
@@ -46,6 +65,8 @@ Cada grupo debe entregar un informe con:
 - Análisis cuantitativo y cualitativo,
 - Conclusiones fundamentadas.
 
+Este producto se evalúa mediante una **rúbrica específica incluida en cada guía**. Aunque las rúbricas varían ligeramente entre prácticas, suelen considerar aspectos como la claridad del planteamiento, el tratamiento riguroso de los datos y la coherencia del análisis.
+
 ### 🗣️ Exposición oral (competencias blandas)
 
 En la segunda sesión (cuando aplique), **todos los grupos deben realizar una exposición de aproximadamente 10 minutos**, en la que **todos los integrantes participen**. El objetivo de esta actividad es:
@@ -55,10 +76,18 @@ En la segunda sesión (cuando aplique), **todos los grupos deben realizar una ex
 - Responder preguntas del profesor y otros grupos,
 - Justificar decisiones y discutir los resultados de manera crítica.
 
-Esta dimensión comunicativa es clave en la formación de ingenieros y científicos, y representa una de las principales razones por las que **las guías fueron rediseñadas** bajo la metodología STEM.
+También se evalúa mediante una **rúbrica incluida en cada guía**, adaptada al tipo de actividad y al enfoque de la práctica.
 
-## 🌱 Una nueva forma de aprender ciencia
+> En la mayoría de los casos, ambos componentes tienen el mismo peso (50% informe, 50% exposición).
 
-La filosofía STEM no es simplemente una forma de enseñar física, sino un **modelo pedagógico** que articula ciencia, tecnología y pensamiento ingenieril con habilidades transversales como la comunicación, la creatividad y la toma de decisiones. Esta colección de guías busca reflejar ese espíritu.
+### 🧮 Nota definitiva por corte
 
-> Te invitamos a explorar, participar y construir conocimiento con sentido, desde la experiencia directa, el diálogo con tus compañeros y el apoyo constante del profesor.
+La **nota definitiva de cada corte académico** se obtiene **promediando las calificaciones obtenidas en las distintas actividades experimentales desarrolladas durante ese período**.
+
+No hay exámenes escritos ni pruebas acumulativas al final del corte. Por tanto, **la calificación del curso refleja directamente el compromiso, el trabajo experimental y la calidad de los productos entregados por el estudiante** a lo largo del semestre.
+
+## 🌱 Un camino hacia el aprendizaje STEM
+
+La filosofía STEM no se limita a enseñar física, sino que promueve una visión integradora de la ciencia, la tecnología y la ingeniería con habilidades como la creatividad, la comunicación y la toma de decisiones. Aunque las condiciones de implementación no permiten una libertad total en el diseño experimental, **estas guías buscan acercarse a ese ideal**, favoreciendo una participación activa, reflexiva y significativa por parte del estudiante.
+
+> Te invitamos a construir conocimiento desde la experiencia, el trabajo colaborativo y el diálogo crítico, con el acompañamiento constante del docente.
