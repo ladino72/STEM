@@ -13,5 +13,3 @@
 ---
 
 > **Nota:** Revisa el cronograma completo para asegurarte de cumplir con fechas de entrega y preparación.
-
-Principio de Arquímedes

@@ -2,7 +2,7 @@
 
 ---
 
-## ✏️ Desafío STEM: Determinar la Fuerza de Fricción sobre un Carrito Usando una Fotocelda
+## ✏️ Desafío: Determinar la Fuerza de Fricción sobre un Carrito Usando una Fotocelda
 
 ---
 

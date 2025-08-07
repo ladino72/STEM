@@ -13,7 +13,3 @@
 ---
 
 > **Nota:** Revisa el cronograma completo para asegurarte de cumplir con fechas de entrega y preparación.
-
-Dinámica rotacional
-
-Principio de Arquímedes
