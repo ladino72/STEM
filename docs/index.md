@@ -18,7 +18,7 @@ No se trata únicamente de un protocolo formal, sino de una condición necesaria
 
 👉 **Sin seguridad no hay experimentación posible**: las actividades pierden sentido si el entorno no es seguro para quienes las realizan.
 
-📎 [Consulta aquí las Normas de Seguridad completas](http://127.0.0.1:8000/Safety/)
+📎 [Consulta aquí las Normas de Seguridad completas](https://ladino72.github.io/STEM/Safety/)
 
 ## 👨‍🎓 Rol del estudiante
 
