@@ -8,7 +8,7 @@
 
 ## 📄 Documento de trabajo
 
-👉[📎 Descargar PDF: Dinámica rotacional](../FIME/LiquidDensity.pdf)
+👉[📎 Descargar PDF: Arquímedes](../FIME/LiquidDensity.pdf)
 
 ---
 

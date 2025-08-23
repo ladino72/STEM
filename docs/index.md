@@ -6,6 +6,20 @@ Este sitio reúne las **actividades de laboratorio de física** diseñadas e imp
 
 Las guías buscan fomentar un aprendizaje que integre **habilidades científicas, comunicativas y de pensamiento crítico**, respetando al mismo tiempo las **condiciones reales del contexto educativo**.
 
+## 🛡️ Importancia de las Normas de Seguridad
+
+El **cumplimiento estricto de las normas de seguridad** es un requisito indispensable para la realización de cualquier actividad dentro del laboratorio.  
+No se trata únicamente de un protocolo formal, sino de una condición necesaria para:
+
+- Garantizar la **integridad física de todos los participantes**,
+- Proteger los **equipos e instalaciones** de posibles daños,
+- Crear un **ambiente de trabajo confiable y ordenado** que permita concentrarse en el aprendizaje,
+- Fomentar hábitos de responsabilidad y profesionalismo que serán útiles en la vida académica y laboral.
+
+👉 **Sin seguridad no hay experimentación posible**: las actividades pierden sentido si el entorno no es seguro para quienes las realizan.
+
+📎 [Consulta aquí las Normas de Seguridad completas](http://127.0.0.1:8000/Safety/)
+
 ## 👨‍🎓 Rol del estudiante
 
 En el enfoque STEM, se espera que el estudiante **asuma un rol activo y propositivo** en su proceso de formación. Aunque cada guía presenta un montaje experimental ya definido —por razones logísticas y de seguridad—, **el estudiante tiene la responsabilidad de comprenderlo, analizarlo críticamente y tomar decisiones informadas durante la ejecución**.
