@@ -50,13 +50,13 @@
       <td>7</td>
       <td>Marzo 02 - Marzo 07</td>
       <td>Actividad 4: Cinemática en el plano inclinado</td>
-      <td><a href="Kinematica_Inclined.pdf">📎 Plano inclinado</a></td>
+      <td><a href="Kinematic_Inclined.pdf">📎 Plano inclinado</a></td>
     </tr>
     <tr>
       <td>8</td>
       <td>Marzo 09 - Marzo 14</td>
       <td>Actividad 4: Cinemática en el plano inclinado <span style="color:red; font-weight:bold;">(S+I)</span></td>
-      <td><a href="Kinematica_Inclined.pdf">📎 Plano inclinado</a></td>
+      <td><a href="Kinematic_Inclined.pdf">📎 Plano inclinado</a></td>
     </tr>
     <tr>
       <td>9</td>
