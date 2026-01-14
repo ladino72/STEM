@@ -8,7 +8,7 @@
 
 ## 📄 Documento de trabajo
 
-👉[📎 Descargar PDF: Cinemática en el plano inclinado](../FIME/Kinematica_Inclined.pdf)
+👉[📎 Descargar PDF: Cinemática en el plano inclinado](../FIME/Kinematic_Inclined.pdf)
 
 ---
 
