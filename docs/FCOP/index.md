@@ -72,14 +72,14 @@
     </tr>
     <tr>
       <td>11</td>
-      <td>MOctubre 05 - Octubre 10</td>
+      <td>Octubre 05 - Octubre 10</td>
       <td colspan="2" style="text-align:center; color:#003366; font-weight:bold;">
         RECESO
       </td>
     </tr>
     <tr>
       <td>12</td>
-      <td>AOctubre 12 - Octubre 17</td>
+      <td>Octubre 12 - Octubre 17</td>
       <td>Actividad 5: Midiendo concentraciones de azúcar <span style="color:red; font-weight:bold;">(S+I)</span></td>
       <td><a href="Refractive Index.pdf">📎 Concentraciones de azúcar</a></td>
     </tr>
