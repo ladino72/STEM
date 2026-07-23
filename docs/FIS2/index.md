@@ -92,8 +92,8 @@
     <tr>
       <td>14</td>
       <td>Octubre 26 - Octubre 31</td>
-      <td>Actividad 8: Ley de Lenz <span style="color:red; font-weight:bold;">(I)</span></td>
-     <td><a href="Lenz_Law.pdf">📎 Ley de Lenz</a></td>
+      <td>Actividad 8: Leyes de Lenz y Faraday <span style="color:red; font-weight:bold;">(I)</span></td>
+     <td><a href="Lenz_Law.pdf">📎 Leyes de Lenz y Faraday</a></td>
     </tr>
     <tr>
       <td>15</td>

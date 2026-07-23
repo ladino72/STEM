@@ -8,7 +8,7 @@
 
 ## 📄 Documento de trabajo
 
-👉 [📎 Descargar PDF: Ley de Coulomb](../FIEM/Coulomb.pdf)
+👉 [📎 Descargar PDF: Ley de Coulomb](../FIS2/Coulomb.pdf)
 
 ---
 

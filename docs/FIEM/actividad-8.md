@@ -9,6 +9,7 @@
 ## 📄 Documento de trabajo
 
 👉 [📎 Descargar PDF: Campo magnético](../FIEM/EarthMagneticField.pdf)
+👉 [📎 Descargar PDF: Aplicación (Cargador de celular)](../FIEM/Charger.pdf)
 
 ---
 

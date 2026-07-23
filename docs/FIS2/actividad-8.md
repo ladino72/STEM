@@ -6,9 +6,11 @@
 
 ---
 
-## 📄 Documento de trabajo
+## 📄 Documentos de trabajo
 
-👉 [📎 Descargar PDF: Leyes de Lenz y Faraday](../FIEM/Lenz_Law.pdf)
+👉 [📎 Descargar PDF: Leyes de Lenz y Faraday](../FIS2/Lenz_Law.pdf)
+
+👉 [📎 Descargar PDF: Aplicación (Cargador de celular)](../FIS2/Charger.pdf)
 
 ---
 
