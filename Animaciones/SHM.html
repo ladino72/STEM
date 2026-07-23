@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Oscilador Masa–Resorte — Solución Analítica (Luis A. Ladino)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- MathJax -->
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['\\(','\\)'], ['$', '$']] },
+      svg: { fontCache: 'global' },
+      options: { ignoreHtmlClass: 'no-mathjax', processHtmlClass: 'mathjax' }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+
+  <!-- Librerías -->
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.7.0/lib/p5.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+
+  <style>
+    body { font-family: system-ui, Arial, sans-serif; margin: 16px; }
+    .panel { display: grid; grid-template-columns: 1fr; gap: 16px; max-width: 1100px; }
+    .row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+    .card { border: 1px solid #ddd; border-radius: 12px; padding: 12px; }
+    label { display: grid; grid-template-columns: 180px 1fr 90px; gap: 8px; align-items: center; }
+    input[type="range"] { width: 100%; }
+    .controls { display: flex; gap: 8px; flex-wrap: wrap; }
+    button { padding: 8px 12px; border-radius: 8px; border: 1px solid #bbb; background: #f7f7f7; cursor: pointer; }
+    button:active { transform: translateY(1px); }
+    .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+    .stat { background: #fafafa; border: 1px solid #eee; border-radius: 8px; padding: 8px; }
+    .pill, .badge { padding: 2px 8px; border-radius: 999px; border:1px solid #ddd; background:#f6f6f6; display:inline-block; margin:6px 6px 0 0; }
+    .sub { background:#e8f5ff; } .crit { background:#fff6e5; } .sobre { background:#e9ffe8; }
+    small.mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
+  </style>
+</head>
+<body>
+  <h1>Oscilador Masa–Resorte — Solución Analítica</h1>
+  <p class="mathjax">Modelos: \(\dot x=v,\;\dot v=-(k/m)x-(b/m)v\). Usamos
+    \(\omega_n=\sqrt{k/m},\;\zeta=\dfrac{b}{2\sqrt{k\,m}}\).
+    Para \(\zeta<1\) (sub), \(\omega_d=\omega_n\sqrt{1-\zeta^2}\).</p>
+
+  <div class="panel">
+    <div class="row">
+      <!-- Controles -->
+      <div class="card no-mathjax">
+        <h3>Controles</h3>
+        <label>
+          Constante k (N/m)
+          <input id="k" type="range" min="1" max="200" step="1" value="15" />
+          <span id="kVal">15</span>
+        </label>
+        <label>
+          Masa m (kg)
+          <input id="m" type="range" min="0.1" max="5" step="0.1" value="1.0" />
+          <span id="mVal">1.0</span>
+        </label>
+        <label>
+          Amortiguamiento b (kg/s)
+          <input id="b" type="range" min="0" max="15" step="0.01" value="0.15" />
+          <span id="bVal">0.15</span>
+        </label>
+
+        <div class="pill mathjax">\(b_c = 2\sqrt{k\,m}\) = <strong><span id="bcVal">—</span></strong> kg/s</div>
+        <div class="pill mathjax">\(\zeta = \dfrac{b}{2\sqrt{k\,m}}\) = <strong><span id="zetaVal">—</span></strong></div>
+        <span id="regBadge" class="badge">—</span>
+
+        <div class="controls" style="margin-top:10px;">
+          <button id="btnSub">⏬ Sub (0.5·bc)</button>
+          <button id="btnCrit">⏸️ Crítico (bc)</button>
+          <button id="btnSobre">⏫ Sobre (1.5·bc)</button>
+        </div>
+
+        <hr />
+        <label>
+  <span class="lbl mathjax">Desplazamiento inicial \(x_0\) (m)</span>
+  <input id="x0" type="range" min="-1.5" max="1.5" step="0.05" value="0.8" />
+  <span id="x0Val">0.80</span>
+</label>
+
+<label>
+  <span class="lbl mathjax">Velocidad inicial \(v_0\) (m/s)</span>
+  <input id="v0" type="range" min="-2" max="2" step="0.05" value="0.0" />
+  <span id="v0Val">0.00</span>
+</label>
+
+
+        <div class="controls" style="margin-top:6px;">
+          <button id="btnToggle">▶️ Iniciar</button>
+          <button id="btnReset">🔄 Reset</button>
+          <button id="btnFreeze">🧊 Congelar gráficas</button>
+          <button id="btnUnfreeze">💧 Descongelar</button>
+        </div>
+
+        <div style="margin-top:8px;font-size:.9rem;color:#444">
+          <label style="display:inline-flex; align-items:center; gap:8px;">
+            <span>Auto-parar si |x| y |v| ≈ 0</span>
+            <input id="autoStop" type="checkbox" checked />
+          </label>
+          <div style="display:grid;grid-template-columns: 1fr 1fr; gap:8px; margin-top:6px;">
+            <label>
+              Umbral |x| εₓ (m)
+              <input id="epsX" type="range" min="1e-6" max="1e-2" step="1e-6" value="0.0005" />
+              <span id="epsXVal">5e-4</span>
+            </label>
+            <label>
+              Umbral |v| εᵥ (m/s)
+              <input id="epsV" type="range" min="1e-6" max="1e-2" step="1e-6" value="0.0005" />
+              <span id="epsVVal">5e-4</span>
+            </label>
+          </div>
+          <div style="margin-top:6px;">
+            <small class="mono">Rango actual de b: [0, <span id="bMaxLabel">—</span>] kg/s (auto-ajustado a 3·bc)</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Resultados</h3>
+        <div class="stats">
+          <div class="stat"><strong>t</strong> = <span id="tVal">0.00</span> s</div>
+          <div class="stat"><strong>x</strong> = <span id="xVal">0.00</span> m</div>
+          <div class="stat"><strong>v</strong> = <span id="vVal">0.00</span> m/s</div>
+          <div class="stat"><strong>Período (est.)</strong> = <span id="TVal">—</span> s</div>
+          <div class="stat"><strong>Energía total</strong> = <span id="EVal">0.00</span> J</div>
+          <div class="stat"><strong>Régimen</strong> = <span id="regVal">—</span></div>
+        </div>
+        <p class="mathjax" style="font-size: 0.9rem; color:#444; margin-top:8px;">
+          Sub (\(\zeta<1\)): \(x=e^{-\alpha t}\!\Big[x_0\cos\omega_d t+\dfrac{v_0+\alpha x_0}{\omega_d}\sin\omega_d t\Big]\),
+          con \(\alpha=\zeta\omega_n,\;\omega_d=\omega_n\sqrt{1-\zeta^2}\).<br/>
+          Crítico (\(\zeta=1\)): \(x=(x_0+(v_0+\omega_n x_0)t)\,e^{-\omega_n t}\).<br/>
+          Sobre (\(\zeta>1\)): \(x=C_1e^{r_1 t}+C_2e^{r_2 t}\), \(r_{1,2}=-\omega_n(\zeta\mp\sqrt{\zeta^2-1})\),
+          \(C_1=\dfrac{v_0-r_2 x_0}{r_1-r_2},\;C_2=x_0-C_1\). Luego \(v=\dot x\).
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card">
+        <h3>Escena</h3>
+        <div id="p5-holder"></div>
+      </div>
+      <div class="card">
+        <h3>\(x(t)\) y \(v(t)\)</h3>
+        <canvas id="chart_xv" height="260"></canvas>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card">
+        <h3>\(K(t),\,U(t),\,E(t)\)</h3>
+        <canvas id="chart_EKU" height="260"></canvas>
+      </div>
+      <div class="card">
+        <h3>\(P_{\rm dis}(t)=b\,v(t)^2\)</h3>
+        <canvas id="chart_P" height="260"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // ---------- Utilidades ----------
+    const $ = id => document.getElementById(id);
+    const clampSmall = (v, eps) => Math.abs(v) < eps ? 0 : v;
+    const fmt = (n, d=2) => (+n).toFixed(d);
+    const fmtSci = n => { const x=+n; if(x===0) return "0"; return (Math.abs(x)>=1e-3&&Math.abs(x)<1e3)?x.toFixed(4):x.toExponential(2); };
+
+    // ---------- Estado ----------
+    const state = {
+      k: 15, m: 1.0, b: 0.15,
+      t: 0, running: false,
+      // condiciones iniciales "analíticas" (se usan para evaluar x(t),v(t))
+      x0: 0.8, v0: 0.0,
+      freezeChart: false,
+      epsX: 5e-4, epsV: 5e-4, autoStop: true,
+      lastX: 0
+    };
+
+    // ---------- Sliders/labels ----------
+    const S = { k:$("k"), m:$("m"), b:$("b"), x0:$("x0"), v0:$("v0"), epsX:$("epsX"), epsV:$("epsV") };
+    const L = {
+      k:$("kVal"), m:$("mVal"), b:$("bVal"), x0:$("x0Val"), v0:$("v0Val"),
+      epsX:$("epsXVal"), epsV:$("epsVVal"),
+      bc:$("bcVal"), zeta:$("zetaVal"), bMaxLabel:$("bMaxLabel"),
+      regBadge:$("regBadge"), regVal:$("regVal")
+    };
+
+    function syncLabels(){
+      L.k.textContent = fmt(S.k.value,0);
+      L.m.textContent = (+S.m.value).toFixed(1);
+      L.b.textContent = (+S.b.value).toFixed(2);
+      L.x0.textContent = (+S.x0.value).toFixed(2);
+      L.v0.textContent = (+S.v0.value).toFixed(2);
+      L.epsX.textContent = (+S.epsX.value >= 1e-3) ? fmt(S.epsX.value,4) : (+S.epsX.value).toExponential(0);
+      L.epsV.textContent = (+S.epsV.value >= 1e-3) ? fmt(S.epsV.value,4) : (+S.epsV.value).toExponential(0);
+    }
+
+    function omega_n(){ return Math.sqrt(state.k/state.m); }
+    function bc(){ return 2*Math.sqrt(state.k*state.m); }
+    function zeta(){ return state.b / bc(); }
+
+    function updateRegimeBadges(){
+      const z = zeta(), tol = 5e-3;
+      $("bcVal").textContent = fmtSci(bc());
+      $("zetaVal").textContent = fmtSci(z);
+      const badge = $("regBadge");
+      badge.classList.remove("sub","crit","sobre");
+      let regime="—";
+      if (Math.abs(z-1) <= tol){ regime="Críticamente amortiguado"; badge.classList.add("crit"); }
+      else if (z<1){ regime="Subamortiguado"; badge.classList.add("sub"); }
+      else { regime="Sobreamortiguado"; badge.classList.add("sobre"); }
+      badge.textContent = regime; $("regVal").textContent = regime;
+    }
+
+    function recalibrateBSlider(){
+      const bcVal = bc(), newMax = Math.max(3*bcVal, 2);
+      S.b.max = newMax.toFixed(2); $("bMaxLabel").textContent = fmtSci(newMax);
+      if (+S.b.value > newMax) { S.b.value = newMax.toFixed(2); state.b = +S.b.value; }
+    }
+
+    // ---------- Soluciones analíticas ----------
+    function stateAt(t){
+      const k=state.k, m=state.m, b=state.b, x0=state.x0, v0=state.v0;
+      const wn = Math.sqrt(k/m);
+      const z = b / (2*Math.sqrt(k*m));
+      const tol=5e-3;
+
+      if (Math.abs(z-1)<=tol){ // crítico
+        const x = (x0 + (v0 + wn*x0)*t) * Math.exp(-wn*t);
+        const v = (v0 + wn*x0 - wn*(x0 + (v0 + wn*x0)*t)) * Math.exp(-wn*t);
+        return {x,v};
+      } else if (z < 1){ // sub
+        const alpha = z*wn;
+        const wd = wn*Math.sqrt(1 - z*z);
+        const cos = Math.cos(wd*t), sin = Math.sin(wd*t);
+        const A = x0, B = (v0 + alpha*x0)/wd;
+        const x = Math.exp(-alpha*t) * (A*cos + B*sin);
+        const v = Math.exp(-alpha*t) * ( v0*cos - (alpha*(v0+alpha*x0)/wd + x0*wd)*sin );
+        return {x,v};
+      } else { // sobre
+        const s = Math.sqrt(z*z - 1);
+        const r1 = -wn*(z - s);
+        const r2 = -wn*(z + s);
+        const C1 = (v0 - r2*x0)/(r1 - r2);
+        const C2 = x0 - C1;
+        const e1 = Math.exp(r1*t), e2 = Math.exp(r2*t);
+        const x = C1*e1 + C2*e2;
+        const v = C1*r1*e1 + C2*r2*e2;
+        return {x,v};
+      }
+    }
+
+    // ---------- Semillas / reset ----------
+    function seedCharts(){
+      if(state.freezeChart) return;
+      chartXV.data.labels = ["0.00"];
+      chartXV.data.datasets[0].data = [state.x0];
+      chartXV.data.datasets[1].data = [state.v0];
+      chartXV.update();
+
+      const K0 = 0.5*state.m*state.v0*state.v0;
+      const U0 = 0.5*state.k*state.x0*state.x0;
+      const E0 = K0+U0;
+      chartEKU.data.labels = ["0.00"];
+      chartEKU.data.datasets[0].data = [K0];
+      chartEKU.data.datasets[1].data = [U0];
+      chartEKU.data.datasets[2].data = [E0];
+      chartEKU.update();
+
+      const P0 = state.b*state.v0*state.v0;
+      chartP.data.labels = ["0.00"];
+      chartP.data.datasets[0].data = [P0];
+      chartP.update();
+    }
+
+    function resetAnalyticICs(){
+      state.k = +S.k.value; state.m = +S.m.value; state.b = +S.b.value;
+      state.x0 = +S.x0.value; state.v0 = +S.v0.value;
+      state.t = 0; state.lastX = state.x0;
+      seedCharts(); syncLabels(); updateRegimeBadges(); updateStats({x:state.x0, v:state.v0});
+    }
+
+    // ---------- Botones ----------
+    const btnToggle = $("btnToggle"), btnReset = $("btnReset");
+    const btnFreeze = $("btnFreeze"), btnUnfreeze = $("btnUnfreeze");
+    const btnSub = $("btnSub"), btnCrit = $("btnCrit"), btnSobre = $("btnSobre");
+    $("autoStop").addEventListener("change", e => state.autoStop = e.target.checked);
+
+    btnToggle.addEventListener("click", () => {
+      state.running = !state.running; btnToggle.textContent = state.running ? "⏸️ Pausar" : "▶️ Iniciar";
+    });
+    btnReset.addEventListener("click", () => resetAnalyticICs());
+    btnFreeze.addEventListener("click", () => state.freezeChart = true);
+    btnUnfreeze.addEventListener("click", () => state.freezeChart = false);
+
+    btnSub .addEventListener("click", () => { S.b.value = (0.5*bc()).toFixed(2); state.b=+S.b.value; resetAnalyticICs(); });
+    btnCrit.addEventListener("click", () => { S.b.value = (1.0*bc()).toFixed(2); state.b=+S.b.value; resetAnalyticICs(); });
+    btnSobre.addEventListener("click", () => { S.b.value = (1.5*bc()).toFixed(2); state.b=+S.b.value; resetAnalyticICs(); });
+
+    // ---------- Eventos sliders ----------
+    ["k","m","b","x0","v0","epsX","epsV"].forEach(id => {
+      S[id].addEventListener("input", () => {
+        if(id==="k"||id==="m"){ recalibrateBSlider(); }
+        if(id==="k"||id==="m"||id==="b"){
+          state.k=+S.k.value; state.m=+S.m.value; state.b=+S.b.value; updateRegimeBadges();
+        }
+        if(id==="x0"){ state.x0=+S.x0.value; state.t=0; seedCharts(); }
+        if(id==="v0"){ state.v0=+S.v0.value; state.t=0; seedCharts(); }
+        if(id==="epsX"){ state.epsX = +S.epsX.value; }
+        if(id==="epsV"){ state.epsV = +S.epsV.value; }
+        syncLabels(); updateStats({x:state.x0, v:state.v0});
+      });
+    });
+
+    // ---------- Energías / potencia ----------
+    const kinetic = (m,v)=>0.5*m*v*v;
+    const potential = (k,x)=>0.5*k*x*x;
+    const energy = (k,m,x,v)=>kinetic(m,v)+potential(k,x);
+    const powerDiss = (b,v)=>b*v*v;
+
+    // ---------- Charts (sin recorte; t siempre desde 0) ----------
+    const commonOpts = {
+      responsive: true, animation: false, interaction: { mode: "nearest", intersect: false },
+      scales: { x: { title: { display: true, text: "Tiempo (s)" } }, y: { title: { display: true, text: "Magnitud" } } },
+      plugins: { legend: { position: "bottom" } }
+    };
+    const chartXV = new Chart($("chart_xv").getContext("2d"), {
+      type: "line",
+      data: { labels: [], datasets: [
+        { label: "x (m)", data: [], borderWidth: 2, pointRadius: 0, tension: 0.1 },
+        { label: "v (m/s)", data: [], borderWidth: 2, pointRadius: 0, tension: 0.1 }
+      ]}, options: commonOpts
+    });
+    const chartEKU = new Chart($("chart_EKU").getContext("2d"), {
+      type: "line",
+      data: { labels: [], datasets: [
+        { label: "K (J)", data: [], borderWidth: 2, pointRadius: 0, tension: 0.1 },
+        { label: "U (J)", data: [], borderWidth: 2, pointRadius: 0, tension: 0.1 },
+        { label: "E = K + U (J)", data: [], borderWidth: 2, pointRadius: 0, tension: 0.1 }
+      ]}, options: commonOpts
+    });
+    const chartP = new Chart($("chart_P").getContext("2d"), {
+      type: "line",
+      data: { labels: [], datasets: [
+        { label: "P_dis (W)", data: [], borderWidth: 2, pointRadius: 0, tension: 0.1 }
+      ]}, options: commonOpts
+    });
+
+    function pushCharts(sample){
+      if(state.freezeChart) return;
+      const t = state.t.toFixed(3);
+      chartXV.data.labels.push(t);
+      chartXV.data.datasets[0].data.push(sample.x);
+      chartXV.data.datasets[1].data.push(sample.v);
+      const K=kinetic(state.m,sample.v), U=potential(state.k,sample.x), E=K+U, P=powerDiss(state.b,sample.v);
+      chartEKU.data.labels.push(t);
+      chartEKU.data.datasets[0].data.push(K);
+      chartEKU.data.datasets[1].data.push(U);
+      chartEKU.data.datasets[2].data.push(E);
+      chartP.data.labels.push(t);
+      chartP.data.datasets[0].data.push(P);
+      chartXV.update(); chartEKU.update(); chartP.update();
+    }
+
+    // ---------- p5 escena (solo visual; sin integración) ----------
+    let pxScale=140, anchorX=60;
+    function sketch(p){
+      p.setup = function(){
+        const c = p.createCanvas(460, 260); c.parent("p5-holder"); p.frameRate(120);
+        recalibrateBSlider(); syncLabels(); updateRegimeBadges();
+        resetAnalyticICs();
+      };
+      p.draw = function(){
+        const dt = 1/120;
+        if(state.running) state.t += dt;
+
+        const s = stateAt(state.t); // estado analítico en t
+        // auto-stop si está esencialmente quieto (solo si usuario lo activa)
+        if (state.running && state.autoStop &&
+            Math.abs(s.x) < state.epsX && Math.abs(s.v) < state.epsV) {
+          state.running = false; document.getElementById("btnToggle").textContent = "▶️ Iniciar";
+        }
+
+        // escena
+        p.background(250);
+        p.stroke(0); p.strokeWeight(2); p.line(anchorX, 40, anchorX, 220);
+        const xPix = anchorX + s.x * pxScale + 220, baseY=140;
+        p.noFill(); p.stroke(0); p.strokeWeight(1.5);
+        p.beginShape(); const coils=10, amp=12, startX=anchorX+20, endX=xPix-20;
+        for(let i=0;i<=coils;i++){ const tt=i/coils; const xi=p.lerp(startX,endX,tt); const yi=baseY+(i%2===0?-amp:amp); p.vertex(xi,yi); }
+        p.endShape();
+        p.fill(40,120,220); p.noStroke(); p.rectMode(p.CENTER); p.rect(xPix, baseY, 36, 36, 6);
+        p.stroke(200); p.line(0, baseY+46, p.width, baseY+46);
+
+        if(state.running) pushCharts(s);
+        updateStats(s);
+      };
+    }
+    new p5(sketch);
+
+    // ---------- Stats ----------
+    function estimatePeriod(){ // solo válido si subamortiguado
+      const z = zeta(); if (z>=1) return null;
+      const wn = omega_n(), wd = wn*Math.sqrt(1-z*z);
+      return (2*Math.PI)/wd;
+    }
+
+    function updateStats(sample){
+      $("tVal").textContent = state.t.toFixed(3);
+      $("xVal").textContent = clampSmall(sample.x ?? state.x0, 1e-6).toFixed(6);
+      $("vVal").textContent = clampSmall(sample.v ?? state.v0, 1e-6).toFixed(6);
+      const T = estimatePeriod(); $("TVal").textContent = T ? T.toFixed(3) : "—";
+      const E = energy(state.k,state.m, sample.x ?? state.x0, sample.v ?? state.v0);
+      $("EVal").textContent = E.toFixed(6);
+    }
+  </script>
+</body>
+</html>
+
