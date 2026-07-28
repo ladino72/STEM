@@ -99,7 +99,7 @@
       <td>15</td>
       <td>Noviembre 02 - Noviembre 07</td>
       <td>Actividad 7: Conservación de la energía <span style="color:red; font-weight:bold;">(S+I)</span></td>
-      <td><a href="EnergyConservation.pdf">📎 Conservación de la energía</a></td>
+      <td><a href="EnergyConservation_1.pdf">📎 Conservación de la energía</a></td>
     </tr>
     <tr>
       <td>16</td>

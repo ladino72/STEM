@@ -87,7 +87,7 @@
       <td>13</td>
       <td>Octubre 19 - Octubre 24</td>
       <td>Actividad 6: Conservación de la energía <span style="color:red; font-weight:bold;">(S+I)</span></td>
-      <td><a href="EnergyConservation.pdf">📎 Conservación de la energía</a></td>
+      <td><a href="EnergyConservation_1.pdf">📎 Conservación de la energía</a></td>
     </tr>
     <tr>
       <td>14</td>
