@@ -93,7 +93,7 @@
       <td>14</td>
       <td>Octubre 26 - Octubre 31</td>
       <td>Actividad 7: Conservación de la energía</td>
-      <td><a href="EnergyConservation.pdf">📎 Conservación de la energía</a></td>
+      <td><a href="EnergyConservation_1.pdf">📎 Conservación de la energía</a></td>
     </tr>
     <tr>
       <td>15</td>

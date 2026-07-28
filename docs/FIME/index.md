@@ -81,7 +81,7 @@
       <td>12</td>
       <td>Octubre 12 - Octubre 17</td>
       <td>Actividad 6: Conservación de la energía</td>
-      <td><a href="EnergyConservation.pdf">📎 Conservación de la energía</a></td>
+      <td><a href="EnergyConservation_1.pdf">📎 Conservación de la energía</a></td>
     </tr>
     <tr>
       <td>13</td>
