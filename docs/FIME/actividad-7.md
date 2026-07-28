@@ -2,7 +2,7 @@
 
 ---
 
-## ✏️ Desafío: Analizar el movimiento de una esfera a lo largo de un riel acanalado
+## ✏️ Desafío: ¿Coinciden la velocidad medida y la predicha por un modelo basado en la conservación de la energía?
 
 ---
 

@@ -2,7 +2,7 @@
 
 ---
 
-## ✏️ Desafío: Determinar g usando la Conservación de la Energía Mecánica
+## ✏️ Desafío: ¿Coinciden la velocidad medida y la predicha por un modelo basado en la conservación de la energía?
 
 ---
 
